@@ -1,0 +1,68 @@
+.TodoInput input {
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 17em;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 1em;
+    height: 1.5em;
+    outline: none;
+}
+
+.TodoInput::placeholder {
+    font-style: italic;
+}
+
+.TodoList {
+    margin: 5px;
+    padding: 5px;
+}
+
+.TodoItem {
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 15em;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 1.5em;
+    text-align: left;
+}
+
+.TodoItemText {
+    width: 13em;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.Completed {
+    text-decoration: line-through;
+    background-color: lightgreen;
+}
+
+.TodoItem:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.TodoItem:hover.Completed {
+    text-decoration: line-through;
+    background-color: lightgreen;
+}
+
+.TodoItemButtons {
+    display: none;
+    width: fit-content;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+.TodoItem:hover .TodoItemButtons {
+    display: inline-block;
+}
+
+.TodoItemButtons input {
+    height: 1.5em;
+    width: 1.5em;
+}
